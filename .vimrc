@@ -33,6 +33,8 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'AutoComplPop'
+Plugin 'bling/vim-airline'
+
 
 
 filetype plugin indent on     " required
@@ -65,7 +67,7 @@ colorscheme desert
 hi CursorLine term=bold cterm=bold ctermbg=235 guibg=Grey40
 hi LineNr ctermfg=8 ctermbg=234
 hi Search cterm=NONE ctermfg=15 ctermbg=166
-
+set laststatus=2
 
 
 " Plugin setting
@@ -89,3 +91,6 @@ map <Leader>k <Plug>(easymotion-k)
 " AutoComplPop
 let g:acp_behaviorSnipmateLength = 1
 let g:acp_completeOption = '.,w,b,u,t,i,k'
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
